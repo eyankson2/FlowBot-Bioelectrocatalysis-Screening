@@ -1,0 +1,154 @@
+{
+  "_example_notice": "Synthetic demonstration ONLY. All three simulation switches must remain enabled; not laboratory data.",
+  "hardware": {
+    "com": "COM7",
+    "dev": 0,
+    "data": "data",
+    "templates": "templates",
+    "sim_fl": true,
+    "sim_ec": true,
+    "gas_com": "COM4",
+    "sim_gas": true,
+    "ch": {
+      "7": 0,
+      "9": 1,
+      "10": 2
+    },
+    "enz": {
+      "7": "Example electrode A",
+      "9": "Example electrode B",
+      "10": "Example electrode C"
+    }
+  },
+  "stocks": [
+    {
+      "name": "Mediator A (synthetic example)",
+      "port": 2
+    },
+    {
+      "name": "Mediator B (synthetic example)",
+      "port": 3
+    },
+    {
+      "name": "Buffer (synthetic example)",
+      "port": 4
+    },
+    {
+      "name": "Substrate (synthetic example)",
+      "port": 5
+    }
+  ],
+  "run": {
+    "initial": 0,
+    "purge": 0,
+    "prime": 0,
+    "flush": 0,
+    "overnight": false
+  },
+  "jobs": [
+    {
+      "job_id": 1,
+      "label": "Synthetic screening demonstration",
+      "cell_purge": false,
+      "assignments": [
+        {
+          "output_port": 7,
+          "label": "Example mediator A control",
+          "fractions": {
+            "2": 0.2,
+            "4": 0.8
+          },
+          "volume_ml": 3.0,
+          "composition_text": "2:0.20 + 4:0.80",
+          "technique": "CV",
+          "echem_params": {
+            "Ei (V)": "0.000",
+            "dE/dt": "100.000",
+            "dE/dt unit": "mV/s",
+            "E1 (V)": "0.000",
+            "Step percent": "50",
+            "N": "10",
+            "E range min (V)": "-2.500",
+            "E range max (V)": "2.500",
+            "I Range": "Auto",
+            "Bandwidth": "5",
+            "E2 (V)": "0.500",
+            "Reverse Scan": "1",
+            "Ef (V)": "0.000",
+            "nc cycles": "1"
+          },
+          "scan_rates": [
+            100.0
+          ],
+          "purge_after_scan_rates": [],
+          "inter_scan_purge_s": 0.0
+        },
+        {
+          "output_port": 9,
+          "label": "Example mediator B control",
+          "fractions": {
+            "3": 0.2,
+            "4": 0.8
+          },
+          "volume_ml": 3.0,
+          "composition_text": "3:0.20 + 4:0.80",
+          "technique": "CV",
+          "echem_params": {
+            "Ei (V)": "0.000",
+            "dE/dt": "100.000",
+            "dE/dt unit": "mV/s",
+            "E1 (V)": "0.000",
+            "Step percent": "50",
+            "N": "10",
+            "E range min (V)": "-2.500",
+            "E range max (V)": "2.500",
+            "I Range": "Auto",
+            "Bandwidth": "5",
+            "E2 (V)": "0.500",
+            "Reverse Scan": "1",
+            "Ef (V)": "0.000",
+            "nc cycles": "1"
+          },
+          "scan_rates": [
+            100.0
+          ],
+          "purge_after_scan_rates": [],
+          "inter_scan_purge_s": 0.0
+        },
+        {
+          "output_port": 10,
+          "label": "Example mediator A + substrate",
+          "fractions": {
+            "2": 0.2,
+            "4": 0.6,
+            "5": 0.2
+          },
+          "volume_ml": 3.0,
+          "composition_text": "2:0.20 + 4:0.60 + 5:0.20",
+          "technique": "CV",
+          "echem_params": {
+            "Ei (V)": "0.000",
+            "dE/dt": "100.000",
+            "dE/dt unit": "mV/s",
+            "E1 (V)": "0.000",
+            "Step percent": "50",
+            "N": "10",
+            "E range min (V)": "-2.500",
+            "E range max (V)": "2.500",
+            "I Range": "Auto",
+            "Bandwidth": "5",
+            "E2 (V)": "0.500",
+            "Reverse Scan": "1",
+            "Ef (V)": "0.000",
+            "nc cycles": "1"
+          },
+          "scan_rates": [
+            100.0
+          ],
+          "purge_after_scan_rates": [],
+          "inter_scan_purge_s": 0.0
+        }
+      ]
+    }
+  ]
+}

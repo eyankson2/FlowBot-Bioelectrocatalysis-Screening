@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software in a research publication, please cite the FlowBot
+  repository or its archived release and acknowledge eLab, Easy-Biologic,
+  and biologic-com as specified in the README.
+type: software
+title: 'FlowBot: Automated Bioelectrocatalysis Screening with Parallel Bio-Logic Electrochemistry'
+authors:
+  - family-names: Yankson
+    given-names: Emmanuel
+abstract: >-
+  Research software for automated bioelectrocatalysis screening using
+  syringe/valve solution handling, shared nitrogen-solenoid purging,
+  and three concurrent Bio-Logic electrochemical measurements.
+license: GPL-3.0-only
+keywords:
+  - electrochemistry
+  - bioelectrocatalysis
+  - high-throughput screening
+  - automation
+  - Bio-Logic
+  - FlowBot
+# Add repository-code, release version, DOI, and contributors after the first release.

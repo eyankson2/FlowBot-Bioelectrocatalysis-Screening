@@ -1,0 +1,4 @@
+# Windows COM helpers used by Bio-Logic OLECOM; does not install elab or biocom.
+-r requirements.txt
+comtypes
+pywin32; platform_system == "Windows"
